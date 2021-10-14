@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ze-ab7i9ls^bk!$md@(8%is-zet5tls!93&4x4gt21xvxppkh@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # if len(sys.argv) >= 2 and sys.argv[1] == 'runserver':
 #     DEBUG = True
@@ -147,7 +147,7 @@ REST_FRAMEWORK = {
     ),
 
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 2,
+    'PAGE_SIZE': 10,
 }
 
 SIMPLE_JWT = {
